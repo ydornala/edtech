@@ -1,0 +1,130 @@
+@import 'variables.scss';
+
+.book-details-wrapper {
+    .book-details {
+        background-color: $pale3;
+        padding: 80px 0;
+        height: 350px;
+
+        .book-cart-box {
+            padding: 30px;
+            background-color: $white;
+            border-radius: 8px;
+            border: 2px solid #eee;
+        }
+
+        .price-wrapper {
+            float: left;
+            width: 100%;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            .price {
+                color: #19a14c;
+                font-weight: bold;
+                font-size: 23px;
+            }
+        }
+
+        .add-basket-wrapper {
+            button {
+                background-color: $midBlue;
+                color: $white;
+            }
+        }
+
+        .increment-wrapper {
+            background-color: $powderBlue;
+            border-radius: 5px;
+            font-weight: bolder;
+
+            .minus-incr {
+                border-radius: 0;
+                border: 0;
+                border-right: 3px solid #fff;
+                box-shadow: none;
+            }
+
+            .cart-count {
+                padding: 15px;
+            }
+
+            .plus-incr {
+                border-radius: 0;
+                border: 0;
+                border-left: 3px solid #fff;
+                box-shadow: none;                
+            }
+        }
+
+        .prop-list {
+            .prop-list-item {
+                padding-left: 0;
+                padding-right: 0;
+
+                .prop-icon {
+                    padding-right: 9px;
+                    color: #19a14c;
+                }
+            }
+        }
+
+    }
+
+    .book-properties {
+        padding: 112px 0;
+        margin-top: 196px;
+
+        #book-props {
+            .card {
+                border: 0;
+                font-family: Muli, sans-serif;
+                border-bottom: 1px solid rgba(0,0,0,.125);
+
+                .toggle-icon {
+                    color: $midBlue;
+                }
+
+                .card-header {
+                    cursor: pointer;  
+                    background-color: white;
+                    border-bottom: none;
+                    padding: 23px 0;
+
+                    .btn-link {
+                        color: #000;
+                        padding: 0;
+                    }
+                }
+
+                &.collapsed {
+                    .toggle-icon {
+                        &::after {
+                            content: '+'
+                        }
+                    }                    
+                }
+
+                .toggle-icon {
+                    &::after {
+                        content: '-'
+                    }
+                }
+
+                .card-body {
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        .book-image-wrapper {
+            width: 570px;
+            height: 370px;
+            background-color: #eee;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+header {
+    padding: 15px 0;
+    font-family: 'muli';
+    font-weight: 400;
+    color: $midBlue;
+
+    .nav {
+        .nav-link {
+            color: $midBlue;
+        }
+    }
+
+    .basket {
+        background-color: $powderBlue;
+        border-radius: 6px;
+
+        a {
+            border-right: 3px solid #FFFFFF;
+            float: left;
+        }
+
+        .cartCount {
+            float: left;
+            font-weight: bold;
+        }
+    }
+
+    .logo-wrapper {
+        width: 53px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.more-books {
+    background-color: #efece6;
+    padding: 80px 0;
+    
+    .more-books-title {
+        padding-bottom: 40px; 
+    }   
+
+    .more-books-list {
+        .price {
+            color: #19a14c;
+            font-weight: bold;
+        }
+        .col-4 {
+            padding-bottom: 30px;
+        }
+    }
+}

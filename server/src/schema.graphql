@@ -1,0 +1,115 @@
+scalar DateTime
+
+type Query {
+  info: String!
+  feed(filter: String, skip: Int, first: Int, orderBy: LinkOrderByInput): Feed!
+  bookFeed(filter: String, skip: Int, first: Int, orderBy: LinkOrderByInput): BookFeed!
+  cartFeed(filter: String, skip: Int, first: Int, orderBy: LinkOrderByInput): CartFeed!
+}
+
+enum LinkOrderByInput {
+  description_ASC
+  description_DESC
+  url_ASC
+  url_DESC
+  createdAt_ASC
+  createdAt_DESC
+}
+
+type Feed {
+  links: [Link!]!
+  count: Int!
+}
+
+type BookFeed {
+  books: [Book!]!
+  count: Int!
+}
+
+type CartFeed {
+  carts: [Cart!]!
+  count: Int!
+}
+
+type Mutation {
+  post(url: String!, description: String!): Link!
+  signup(email: String!, password: String!, name: String!): AuthPayload
+  login(email: String!, password: String!): AuthPayload
+  vote(linkId: ID!): Vote!
+  cart(cartId: ID!, productId: String!, name: String!, price: Float!, quantity: Int!, items: [ID!]): Cart!
+  book(name:String!,
+    isbn_10:String!,
+    isbn_13:String!,
+    description:String!,
+    paperback:Int!,
+    languages:String!,
+    price: Float!,
+    publisher:String!)
+    :Book!
+}
+
+type Subscription {
+  newLink: Link
+  newVote: Vote
+}
+
+type AuthPayload {
+  token: String
+  user: User
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  links: [Link!]!
+}
+
+type Link {
+  id: ID!
+  createdAt: DateTime!
+  description: String!
+  url: String!
+  postedBy: User
+  votes: [Vote!]!
+}
+
+type Vote {
+  id: ID!
+  link: Link!
+  user: User!
+}
+
+type Specification {
+  id: ID!
+  title: String!
+  description: String!
+  image: String
+}
+
+type Book {
+  id: ID!
+  name: String!
+  description: String!
+  publisher: String!
+  paperback: String!
+  languages: String!
+  isbn_10: String!
+  isbn_13: String!
+  price: Float!
+  specifications: [Specification!]
+}
+
+type CartItem {
+  id: ID!
+  productId: String!
+  name: String!
+  price: Float!
+  quantity: Int!
+  cart: Cart!
+}
+
+type Cart {
+  id: ID!
+  items: [CartItem!]!
+}

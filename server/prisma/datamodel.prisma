@@ -1,0 +1,60 @@
+type Link {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  description: String!
+  url: String!
+  postedBy: User
+  votes: [Vote!]!
+}
+
+type User {
+  id: ID! @id
+  name: String!
+  email: String! @unique
+  password: String!
+  links: [Link!]!
+  votes: [Vote!]!
+}
+
+type Vote {
+  id: ID! @id
+  link: Link!
+  user: User!
+}
+
+
+type Specification {
+  id: ID! @id
+  title: String!
+  description: String!
+  image: String
+  book: Book @relation(name: "BookSpecifications")
+}
+
+type Book {
+  id: ID! @id
+  name: String!
+  description: String!
+  publisher: String!
+  chapters: Int!
+  paperback: Int!
+  languages: String!
+  isbn_10: String!
+  isbn_13: String!
+  price: Float!
+  specifications: [Specification!]! @relation(name: "BookSpecifications")
+}
+
+type CartItem {
+  id: ID! @id
+  productId: String!
+  name: String!
+  price: Float!
+  quantity: Int!
+  cart: Cart!
+}
+
+type Cart {
+  id: ID! @id
+  items: [CartItem!]!
+}
