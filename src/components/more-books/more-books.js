@@ -40,7 +40,7 @@ export default class MoreBooks extends React.Component {
 									<div className="row">
 										{books.map((book, index) => {
 											return (
-												<div className="col-4" key={index}>
+												<div className="col-12 col-md-4" key={index}>
 													<div className="card" key={index}>
 														<div className="card-body">
 															<h3 className="book-title">{book.name}</h3>
@@ -49,7 +49,11 @@ export default class MoreBooks extends React.Component {
 																<div className="float-left">
 																	<span className="price">{book.price}</span>
 																</div>
-																<div className="float-right">
+																<div className="float-right view-details">
+																	<span className="add-btn">
+																		<i className="icon-basket"></i>
+																		<a href="#">Add</a>
+																	</span>
 																	<span>
 																		<a href="#">View Details</a>
 																	</span>

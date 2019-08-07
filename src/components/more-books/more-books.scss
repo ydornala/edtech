@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .more-books {
     background-color: #efece6;
     padding: 80px 0;
@@ -9,6 +11,28 @@
     .more-books-list {
         .card {
             height: 147px;
+            border: 2px solid rgba(0,0,0,.125);
+            border-radius: .5rem;
+
+            .add-btn {
+                display: none;
+            }
+
+            &:hover {
+                .add-btn {
+                    display: inline-block;
+                }
+            }
+
+            .view-details {
+                color: $midBlue;
+                font-family: Muli, sans-serif;
+                a {
+                    color: $midBlue !important;
+                    padding: 0 5px;
+                    text-decoration: underline;
+                }
+            }
         }
         .price {
             color: #19a14c;
@@ -26,7 +50,7 @@
             font-weight: 200;
         }
 
-        .col-4 {
+        [class*="col-"] {
             padding-bottom: 30px;
         }
 
