@@ -43,8 +43,8 @@ export default class MoreBooks extends React.Component {
 												<div className="col-4" key={index}>
 													<div className="card" key={index}>
 														<div className="card-body">
-															<h3>{book.name}</h3>
-															<h6>{book.chapters} Chapters</h6>
+															<h3 className="book-title">{book.name}</h3>
+															<h6 className="sub-line">{book.chapters} Chapters</h6>
 															<div className="more-books-footer">
 																<div className="float-left">
 																	<span className="price">{book.price}</span>
@@ -55,7 +55,7 @@ export default class MoreBooks extends React.Component {
 																	</span>
 																</div>
 															</div>
-														</div>
+														</div>														
 													</div>
 												</div>
 											);

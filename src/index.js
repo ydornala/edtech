@@ -5,24 +5,24 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { ApolloProvider } from 'react-apollo';
-import { ApolloClient } from 'apollo-client';
+import { ApolloClient, InMemoryCache } from 'apollo-boost';
 import { createHttpLink } from 'apollo-link-http';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+
+import { defaults, resolvers} from './resolvers';
 
 const httpLink = createHttpLink({
     uri: 'https://eu1.prisma.sh/syd/edtech/dev'
 });
+
 const cache = new InMemoryCache();
 const client = new ApolloClient({
     link: httpLink,
     cache: cache,
-    resolvers: {
-        getCart: {
-            cart: (cart, _, { cache }) => {
+    resolvers: resolvers
+});
 
-            } 
-        }
-    }
+cache.writeData({
+    data: defaults
 });
 
 ReactDOM.render(

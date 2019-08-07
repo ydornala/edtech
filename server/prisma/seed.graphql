@@ -1,0 +1,166 @@
+mutation {
+	book1: createBook(
+		data: {
+			name: "Zero to One"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 10
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+			specifications: {
+				create: [
+					{
+						title: "Including success stories of Mark and Musk"
+						description: "Author express the huge requirement of new ideas and uniqueness."
+						image: "https://elgarblog.files.wordpress.com/2014/01/education-books.jpg"
+					}
+					{
+						title: "Must-Read!"
+						description: "Author express the huge requirement of new ideas and uniqueness."
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIIyJEbNBC9rjcX03XshEBArueuYSl0_0nknNRjGFVJVorx7o"
+					}
+					{
+						title: "Best book for entrepreneurs."
+						description: "Author express the huge requirement of new ideas and uniqueness."
+						image: "https://cdn.lifehack.org/wp-content/uploads/2014/10/rich-dad-poor-dad.jpg"
+					}
+					{
+						title: "Zero to one is not a single step..."
+						description: "Author express the huge requirement of new ideas and uniqueness."
+						image: "https://images-na.ssl-images-amazon.com/images/I/51JkDEpHUQL._SX317_BO1,204,203,200_.jpg"
+					}
+					{
+						title: "Recommendations for improvement"
+						description: "Author express the huge requirement of new ideas and uniqueness."
+						image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529569534l/40227699.jpg"
+					}
+				]
+			}
+		}
+	) {
+		id
+	}
+	book2: createBook(
+		data: {
+			name: "The Intelligent Investor (English)"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 12
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book3: createBook(
+		data: {
+			name: "Black Holes"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 8
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book4: createBook(
+		data: {
+			name: "The Design of Everyday Things"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 16
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book5: createBook(
+		data: {
+			name: "Handbook of Mathematics"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 20
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book6: createBook(
+		data: {
+			name: "Where Will Man Take Us?"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 12
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book7: createBook(
+		data: {
+			name: "The Power of Habit"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 4
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book8: createBook(
+		data: {
+			name: "The Brain"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 12
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+	book9: createBook(
+		data: {
+			name: "Zero to One"
+			description: "The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won't make a search engine. If you are copying these guys, you aren't learning from them. It's easier to copy a model than to make something new."
+			publisher: "Random House; 2014 edition (18 september 2014)"
+			paperback: 210
+			languages: "English"
+			chapters: 10
+			isbn_10: "9780753555194"
+			isbn_13: "978-0753555194"
+			price: 120
+		}
+	) {
+		id
+	}
+}

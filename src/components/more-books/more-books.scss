@@ -7,12 +7,34 @@
     }   
 
     .more-books-list {
+        .card {
+            height: 147px;
+        }
         .price {
             color: #19a14c;
-            font-weight: bold;
+            font-family: Muli, sans-serif;
+            font-weight: normal;
         }
+
+        .book-title {
+            font-size: 1.2rem;
+            width: 65%;
+        }
+
+        .sub-line {
+            font-family: 'Muli', sans-serif;
+            font-weight: 200;
+        }
+
         .col-4 {
             padding-bottom: 30px;
+        }
+
+        .more-books-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 40px 20px 0;
         }
     }
 }

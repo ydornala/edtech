@@ -59,7 +59,7 @@ export default class BookDetails extends React.Component {
     }
 
     render() {
-        const arg = {"id": "cjyr14xmplay20b53xir4j29a"};
+        const arg = {"id": "cjz187xzkiavc0b53shdmq3i9"};
         return(
             <Query query={QUERY_BOOK} variables={{arg}}> 
             {({loading, error, data}) => {
@@ -99,7 +99,7 @@ export default class BookDetails extends React.Component {
                                                     <i className="fas fa-check prop-icon"></i>
                                                     <span >
                                                         <strong>Language: </strong>
-                                                        {book.language}
+                                                        {book.languages}
                                                     </span>
                                                 </li>     
                                                 <li className="list-group-item prop-list-item">
