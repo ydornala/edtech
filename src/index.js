@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from 'react-apollo';
 import { ApolloClient, InMemoryCache } from 'apollo-boost';
 import { createHttpLink } from 'apollo-link-http';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import { defaults, resolvers} from './resolvers';
 
@@ -27,7 +28,9 @@ cache.writeData({
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <App />
+        <Router>
+            <App />
+        </Router>
     </ApolloProvider>, 
     document.getElementById('root'));
 

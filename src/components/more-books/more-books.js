@@ -4,6 +4,7 @@ import React from 'react';
 import './more-books.scss';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
+import { Link } from 'react-router-dom';
 
 const QUERY_BOOKS = gql`
 	{
@@ -55,7 +56,7 @@ export default class MoreBooks extends React.Component {
 																		<a href="#">Add</a>
 																	</span>
 																	<span>
-																		<a href="#">View Details</a>
+																		<Link to={`/book-details/${book.id}`}>View Details</Link>
 																	</span>
 																</div>
 															</div>

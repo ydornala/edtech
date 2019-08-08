@@ -22,3 +22,6 @@ gulp.task('start:client', () => {
 gulp.task('serve', cb => {
     runSequence(['start:server', 'start:client']);
 });
+
+
+gulp.task('default', ['serve']);
