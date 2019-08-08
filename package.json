@@ -10,6 +10,7 @@
     "apollo-cache-inmemory": "^1.6.2",
     "bcryptjs": "^2.4.3",
     "gh-pages": "^2.1.0",
+    "global": "^4.4.0",
     "graphql": "^14.4.2",
     "graphql-tag": "^2.10.1",
     "graphql-yoga": "^1.18.1",
@@ -24,7 +25,8 @@
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "serve": "^11.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
