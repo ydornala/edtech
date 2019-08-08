@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                                     <div className="col">
                                         <div className="float-left">
                                             <div className="logo-wrapper">
-                                                <img src="assets/images/Acme_logo.png" alt="Acme Logo"/>
+                                                <img src="assets/images/Acme_Logo.png" alt="Acme Logo"/>
                                             </div>
                                         </div>
                                         <div className="float-right">
