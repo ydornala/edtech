@@ -30,7 +30,8 @@
     "serve": "^11.1.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"npm run start:server\" ",
+    "preinstall": "npm i -g yarn",
+    "start": "concurrently \"react-scripts start\" \"yarn run start:server\" ",
     "start:server": "node ./server/src/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
