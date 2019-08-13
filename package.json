@@ -33,7 +33,7 @@
     "preinstall": "npm i -g yarn",
     "start": "concurrently \"react-scripts start\" \"yarn run start:server\" ",
     "start:server": "node ./server/src/index.js",
-    "build": "react-scripts build",
+    "rs-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
