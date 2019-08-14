@@ -30,7 +30,7 @@
     "serve": "^11.1.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"yarn run start:server\" ",
+    "start": "react-scripts start",
     "start:server": "nodemon ./server/src/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
