@@ -56,5 +56,6 @@
   "devDependencies": {
     "gulp-run": "^1.7.1",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "proxy": "https://localhost:4000"
 }
